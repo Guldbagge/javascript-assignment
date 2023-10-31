@@ -7,8 +7,8 @@ import Gobona from '../assets/image/gobona.svg'
 
 const Brand = () => {
   return (
-    <section class="brand">
-    <div class="brands">
+    <section className="brand">
+    <div cclassName="brands">
         <img src={Paperz} alt="pitchure of paperz symbole"/>
         <img src={Dorfus} alt="pitchure of dorfus symbole"/>
         <img src={Martino} alt="pitchure of martino symbole"/>
