@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Showcase from '../components/Showcase.jsx'
 import Brand from '../components/Brand.jsx'
 import Accounting from '../components/Accounting.jsx'
+import AboutCompany from '../components/AboutCompany.jsx'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Showcase/>
       <Brand/>
       <Accounting/>
+      <AboutCompany/>
       <ServicesSection/>
       <Footer/>
     </div>

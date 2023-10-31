@@ -60,7 +60,7 @@ const Header = () => {
                 <NavLink to="/contact">Contact</NavLink>
 
             </nav> 
-            <Link className="btn-yellow btn-login" title="login" href="login.html">Login <i class="fa-solid fa-arrow-up-right"></i></Link>
+            <Link className="btn-yellow btn-login" title="login" href="login.html">Login <i className="fa-solid fa-arrow-up-right"></i></Link>
         </div>
     </div>
 </header>
