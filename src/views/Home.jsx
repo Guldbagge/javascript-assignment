@@ -8,7 +8,8 @@ import Accounting from '../components/Accounting.jsx'
 import AboutCompany from '../components/AboutCompany.jsx'
 import WhyChooseUs from '../components/WhyChooseUs.jsx'
 import ProjectAndCase from '../components/ProjectAndCase.jsx'
-
+import MeetOurTeam from '../components/MeetOurTeam.jsx'
+import Newsletter from '../components/Newsletter.jsx'
 
 const Home = () => {
   return (
@@ -22,6 +23,8 @@ const Home = () => {
       <ServicesSection/>
       <WhyChooseUs/>
       <ProjectAndCase/>
+      <MeetOurTeam/>
+      <Newsletter/>
       <Footer/>
     </div>
     </>
