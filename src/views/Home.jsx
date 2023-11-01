@@ -6,6 +6,9 @@ import Showcase from '../components/Showcase.jsx'
 import Brand from '../components/Brand.jsx'
 import Accounting from '../components/Accounting.jsx'
 import AboutCompany from '../components/AboutCompany.jsx'
+import WhyChooseUs from '../components/WhyChooseUs.jsx'
+import ProjectAndCase from '../components/ProjectAndCase.jsx'
+
 
 const Home = () => {
   return (
@@ -17,6 +20,8 @@ const Home = () => {
       <Accounting/>
       <AboutCompany/>
       <ServicesSection/>
+      <WhyChooseUs/>
+      <ProjectAndCase/>
       <Footer/>
     </div>
     </>
