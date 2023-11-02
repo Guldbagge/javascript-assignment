@@ -10,11 +10,13 @@ import WhyChooseUs from '../components/WhyChooseUs.jsx'
 import ProjectAndCase from '../components/ProjectAndCase.jsx'
 import MeetOurTeam from '../components/MeetOurTeam.jsx'
 import Newsletter from '../components/Newsletter.jsx'
+import ScrollToTop from '../components/Generics/ScrollToTop.jsx'
 
 const Home = () => {
   return (
     <>
      <div className="wrapper-grid">
+      <ScrollToTop/>
       <Header/>
       <Showcase/>
       <Brand/>
