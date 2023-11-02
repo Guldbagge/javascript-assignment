@@ -3,7 +3,6 @@ import logoBlack from '../assets/image/Logo-black.svg'
 import { NavLink } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 
-
 const Header = () => {
   return (
     <header>
@@ -18,7 +17,7 @@ const Header = () => {
             <a className="dropdown-item" href="news.html">News</a>
             <a className="dropdown-item" href="contact.html">Contact</a>
         </div> */}
-        
+  
         <div className="logotype">
             <Link to="/home">
                 <img src={logoBlack} alt="Logotyp picture"/>

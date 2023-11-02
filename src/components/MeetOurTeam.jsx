@@ -36,7 +36,7 @@ const MeetOurTeam = () => {
                 </div>
                 <div className="test2">
                 {/* <Button type="btn-transparent" titel="Brows Team" url="/service"/> */}
-                <button class="btn-transparent">Browse Team<i class="fa-solid fa-arrow-up-right"></i></button>
+                <button className="btn-transparent">Browse Team<i className="fa-solid fa-arrow-up-right"></i></button>
                 </div>
             </div>
 
@@ -72,7 +72,7 @@ const MeetOurTeam = () => {
             </div>
             
             <div>
-            <button class="btn-black">All Reviews<i class="fa-solid fa-arrow-up-right"></i></button>
+            <button className="btn-black">All Reviews<i className="fa-solid fa-arrow-up-right"></i></button>
                 {/* <Button className="btn-transparent" type="dark" titel="All Reviews" url="/service"/> */}
             </div> 
         </section>
