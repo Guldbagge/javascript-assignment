@@ -782,124 +782,127 @@ header {
 
 // our services section
 
-.services-section{
-    background-color:#F0EFE9;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-    .lines-white-right{
-        position: absolute;
-        bottom: 0px;
-        right: 0px;
-    }
-    
-    @media (min-width: 768px){
-        padding-top: 120px;
-        padding-bottom: 120px;   
-    }
 
-    .section-title{
-        text-align: center;
 
-        @media (min-width: 768px){
-        margin-bottom: 0px;
-        margin-left: 75px;    
-        }
 
-        h2{
-            font-family: 'Dm Sans', sans-serif;
-            font-weight: 700;
-            font-size: 30px;
-            padding-bottom: 40px;
-            
+    .services-section{
+
+        .section-title{
+            text-align: center;
             @media (min-width: 768px){
-                font-size: 50px;
-                margin-bottom: 0px;
+            margin-bottom: 0px;
+            margin-left: 75px;    
             }
-           
-            @media (min-width: 1400px){
-                font-size: 66px;
-                margin-bottom: 0px; 
-                margin-left: 0px; 
+    
+            h2{
+                font-family: 'Dm Sans', sans-serif;
+                font-weight: 700;
+                font-size: 30px;
+                padding-bottom: 40px;
+                
+                @media (min-width: 768px){
+                    font-size: 50px;
+                    margin-bottom: 0px;
+                }
+            
+                @media (min-width: 1400px){
+                    font-size: 66px;
+                    margin-bottom: 0px; 
+                    margin-left: 0px; 
+                }
             }
         }
-    }
-
-    .container{
+        background-color:#F0EFE9;
+        position: relative;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        flex-direction: column;
+        
+        .lines-white-right{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        
         @media (min-width: 768px){
-            text-align: left;
-            margin-bottom: 0px; 
+            padding-top: 120px;
+            padding-bottom: 120px;   
         }
 
-        .services-sections{
-            display: grid;
-            grid-template-columns: 1fr ;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            gap: 30px;
-            margin-top: -60px;
-            margin-bottom: 45px;
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-            @media (min-width: 992px){
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows:  1fr 1fr ;
+            @media (min-width: 768px){
+                text-align: left;
+                margin-bottom: 0px; 
             }
 
-            @media (min-width: 1400px){
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                grid-template-rows: 1fr ;
-            }
+            .services-sections{
+                display: grid;
+                grid-template-columns: 1fr ;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                gap: 30px;
+                margin-top: -60px;
+                margin-bottom: 45px;
 
-            div{
-                width: 308px;
-                height: 333px;
-                background-color: #FFFFFF;
-                padding: 25px;
-                
-                &:hover{
-                    background-color:  #f9d783;
-                    .btn-service{
-                        background-color: #FFFFFF;
-                        border: 1px solid #FFFFFF;
-                        color:#191919;
+                @media (min-width: 992px){
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows:  1fr 1fr ;
+                }
+
+                @media (min-width: 1400px){
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 1fr ;
+                }
+
+                div{
+                    width: 308px;
+                    height: 333px;
+                    background-color: #FFFFFF;
+                    padding: 25px;
+                    
+                    &:hover{
+                        background-color:  #f9d783;
+                        .btn-service{
+                            background-color: #FFFFFF;
+                            border: 1px solid #FFFFFF;
+                            color:#191919;
+                        }
+                    } 
+                }
+
+                .services{
+                    text-decoration: none;
+                    color: #191919;
+
+                    h3{
+                        font-family: 'Dm Sans', sans-serif;
+                        font-weight: 700;
+                        font-size: 30px;   
                     }
-                } 
-            }
 
-            .services{
-                text-decoration: none;
-                color: #191919;
-
-                h3{
-                    font-family: 'Dm Sans', sans-serif;
-                    font-weight: 700;
-                    font-size: 30px;   
-                }
-
-                p{
-                    font-family: inter;
-                    font-weight: 400;
-                    line-height: 1.8;
-                    margin-bottom: 60px;
+                    p{
+                        font-family: inter;
+                        font-weight: 400;
+                        line-height: 1.8;
+                        margin-bottom: 60px;
+                    }
                 }
             }
-        }
-    } 
+        } 
 
-    .btn-transparent{ margin-bottom: 60px;
-    
-        @media (min-width: 768px){
-            margin-bottom: 0px;
-        }
-    } 
+        .btn-transparent{ margin-bottom: 60px;
+        
+            @media (min-width: 768px){
+                margin-bottom: 0px;
+            }
+        } 
 }
+
 
 // why Choose Us section
 

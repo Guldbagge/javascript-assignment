@@ -16,11 +16,10 @@ const ServicesSection = () => {
   return (
     <section className="services-section">
         <div className="section-title">
-            {/* <Heading title="Our Services" description= "We Provide The Best Service For Consulting"/> */}
             <p>Our Services</p>
             <h2>We Provide The Best <br/> Service For Consulting</h2>
         </div>
-
+        <div className='wrapper'>
         <div className="container">                   
             <img className= "lines-white-right" src={backgroundLinesWhiteRight} alt="" />
 
@@ -36,6 +35,7 @@ const ServicesSection = () => {
 
         <div className="center-content">
             <Button type="btn-transparent" titel="Brows services" url="/service"/>
+        </div>
         </div>
     </section>
   )

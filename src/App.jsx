@@ -5,6 +5,7 @@ import Home from './views/Home'
 import Contact from './views/Contact'
 import PageNotFound from './views/PageNotFound'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import News from './views/News'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/home' element={<Home />} />
       <Route path='/contact' element={<Contact />} />
+      <Route path='/news' element={<News />} />
       <Route path='*' element={<PageNotFound />} />
   </Routes>
     

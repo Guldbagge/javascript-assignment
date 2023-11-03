@@ -701,17 +701,6 @@ header .container .menu .btn-login {
   align-items: center;
   flex-direction: column;
 }
-.services-section .lines-white-right {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-}
-@media (min-width: 768px) {
-  .services-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-}
 .services-section .section-title {
   text-align: center;
 }
@@ -738,6 +727,17 @@ header .container .menu .btn-login {
     font-size: 66px;
     margin-bottom: 0px;
     margin-left: 0px;
+  }
+}
+.services-section .lines-white-right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+@media (min-width: 768px) {
+  .services-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 .services-section .container {
