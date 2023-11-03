@@ -1778,17 +1778,33 @@ footer{
                 h3{color: #191919;
                 font-size: 22px;
                 }
+                p{margin-top: 20px;}
             }
 
             .image-article{  
 
-                img{
-                    width: 100%;
+                img {
+                    width: 420px;
+                    height: 230px;}
+                //     width: 100%;
+                //     height: auto;
+                //   }
+                  
+                //   @media (min-width: 768px) {
+                //     img {
+                //       width: fit-content;
+                //       max-width: 100%;
+                //     }
+                //   }
+                  
+                // img{
+                //     width: 100%;
             
-                    @media (min-width: 768px){
-                        width: fit-content;
-                    }
-                } 
+                //     @media (min-width: 768px){
+                //         width: fit-content;
+                //     }
+                // } 
+
 
                 h3{
                     font-family: 'DM Sans', sans-serif;

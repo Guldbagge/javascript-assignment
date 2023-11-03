@@ -1579,18 +1579,16 @@ footer .border-bottom {
   color: #191919;
   font-size: 22px;
 }
+.our-news-articles .container .wrapper-articles .image-and-text p {
+  margin-top: 20px;
+}
 .our-news-articles .container .wrapper-articles .image-article {
   position: relative;
   z-index: -1;
 }
 .our-news-articles .container .wrapper-articles .image-article img {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .our-news-articles .container .wrapper-articles .image-article img {
-    width: -moz-fit-content;
-    width: fit-content;
-  }
+  width: 420px;
+  height: 230px;
 }
 .our-news-articles .container .wrapper-articles .image-article h3 {
   font-family: "DM Sans", sans-serif;
