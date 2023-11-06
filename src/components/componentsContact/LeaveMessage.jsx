@@ -6,8 +6,6 @@ const LeaveMessage = () => {
 
   const emailRegEx = new RegExp (/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)
   
-  const [errorMessage, setErrorMessage] = useState('')
-
   const form = useFormik({
     initialValues: {
       name: '',
@@ -17,23 +15,22 @@ const LeaveMessage = () => {
 
     validationSchema: Yup.object({
       name: Yup.string()
-        .required("Förnamnet måste anges.")
-        .min(2, "Förnamnet måste bestå av minst två tecken."),
-
+        .required("First name must be provided.")
+        .min(2, "First name must consist of at least two characters."),
+    
       email: Yup.string()
-        .required("E-post måste anges.")
-        .matches(emailRegEx, "Ange en gilltig e-postadress."),
-
+        .required("Email must be provided.")
+        .matches(emailRegEx, "Provide a valid email address."),
+    
       message: Yup.string()
-      .required("Ett medelande måste anges.")
-      .min(2, "Medelandet måste bestå av minst två tecken."),
-
-        
+        .required("A message must be provided.")
+        .min(2, "The message must consist of at least two characters."),
     }),
+    
   
     onSubmit: async (values) => {
       console.log('Submitting values:', values);
-
+    
       const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
         method: 'post',
         headers: {
@@ -41,20 +38,27 @@ const LeaveMessage = () => {
         },
         body: JSON.stringify(values)
       });
-
+    
       console.log('Result status:', result.status);
-
+    
       switch (result.status) {
         case 200:
-          alert('Användaren skapades.')
-        break;
-
+          document.getElementById("status-message").innerHTML = `
+          <div class="alert alert-success" role="alert">
+          Your registration was successful!
+          </div>`
+          break;
+    
         case 400:
-          alert('Något gick fel')
-        break;
-
+          alert('Something went wrong')
+          document.getElementById("status-message").innerHTML = `
+          <div class="alert alert-warning" role="alert">
+          ${result}
+          </div>`
+          break;
       }
     }
+    
   })
 
   return (
@@ -83,6 +87,7 @@ const LeaveMessage = () => {
               <button className="btn-yellow" type="submit" tabIndex="4">Send Message<i className="fa-solid fa-arrow-up-right"></i></button>
             </div>
           </form>
+          <div id="status-message"></div>
         </div>
       </div>
     </section>
