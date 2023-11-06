@@ -4,13 +4,13 @@ import BackgroundWavyLines from '../../assets/image/background-wavy-lines.svg'
 
 const Newsletter = () => {
   return (
-    <section class="newsletter">
-    <img class= "background-wavy-lines" src={BackgroundWavyLines} alt=""/>
-    <div class="container">
+    <section className="newsletter">
+    <img className= "background-wavy-lines" src={BackgroundWavyLines} alt=""/>
+    <div className="container">
         <h2>Get News Updates By Signup </h2>
         <form>
             <input type="text" placeholder="username@domain.com"/>
-            <button class="btn-yellow">Subscribe <i class="fa-solid fa-arrow-up-right"></i></button>
+            <button className="btn-yellow">Subscribe <i className="fa-solid fa-arrow-up-right"></i></button>
         </form>
     </div>
 </section>
