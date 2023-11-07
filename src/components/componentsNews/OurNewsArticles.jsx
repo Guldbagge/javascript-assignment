@@ -1,26 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import OurNewsArticlesBox from '../../components/componentsNews/OurNewsArticlesBox'
+import React, { useContext, useEffect, useState } from 'react';
+import { ArticlesContext } from'../../components/componentsNews/ArticlesContext';
+import NewsBox from '../componentsNewsDetails/NewsBox';
 
 function OurNewsArticles() {
-  const [articles, setArticles] = useState([]);
+  const articles = useContext(ArticlesContext);
+  const [loadedArticles, setLoadedArticles] = useState([]);
 
   useEffect(() => {
-    const getArticles = async () => {
-      try {
-        const result = await fetch('https://win23-assignment.azurewebsites.net/api/articles');
-        if (result.ok) {
-          const data = await result.json();
-          setArticles(data);
-        } else {
-          throw new Error('Failed to fetch data');
-        }
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
+    // Om du vill lagra de första tre artiklarna i en separat state
+    if (articles.length > 0) {
+      const Articles = articles;
+      setLoadedArticles(Articles);
+    }
+  }, [articles]);
 
-    getArticles();
-  }, []);
+  if (loadedArticles.length === 0) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <section className="our-news-articles">
@@ -28,8 +24,8 @@ function OurNewsArticles() {
         <div className="h2"><h2>Our News & Articles</h2></div>
 
         <div className="wrapper-articles">
-          {articles.map((article) => (
-            <OurNewsArticlesBox
+          {loadedArticles.map((article) => (
+            <NewsBox
               key={article.id}
               title={article.title}
               content={article.content}
@@ -37,7 +33,6 @@ function OurNewsArticles() {
               published={article.published} 
               category={article.category}
               imageUrl={article.imageUrl}
-              
             />
           ))}
         </div>
