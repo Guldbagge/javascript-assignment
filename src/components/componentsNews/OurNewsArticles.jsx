@@ -1,13 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { ArticlesContext } from'../../components/componentsNews/ArticlesContext';
-import NewsBox from '../componentsNewsDetails/NewsBox';
+import NewsBox from './NewsBox';
 
 function OurNewsArticles() {
   const articles = useContext(ArticlesContext);
   const [loadedArticles, setLoadedArticles] = useState([]);
 
   useEffect(() => {
-    // Om du vill lagra de första tre artiklarna i en separat state
     if (articles.length > 0) {
       const Articles = articles;
       setLoadedArticles(Articles);

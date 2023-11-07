@@ -9,7 +9,7 @@ import { ArticlesProvider } from '../components/componentsNews/ArticlesContext';
 
 const News = () => {
   return (
-    <ArticlesProvider> {/* Placera ArticlesProvider här för att omsluta komponenterna som behöver kontexten */}
+    <ArticlesProvider>
       <div className="wrapper-grid">
         <ScrollToTop/>
         <Header/>

@@ -12,7 +12,7 @@ const NewsBox = ({ url, title, content, published, imageUrl, category }) => {
   const { day, month } = formatDate(published);
 
   return (
-    <Link className="image-and-text" to={url}>
+    <Link className="image-and-text" to="/newsdetails">
       <div className="image-article">
         <img src={imageUrl} alt="Article" />
         <div className="date">

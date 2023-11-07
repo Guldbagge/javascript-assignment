@@ -11,8 +11,7 @@ const ArticlesProvider = ({ children }) => {
         const result = await fetch('https://win23-assignment.azurewebsites.net/api/articles');
         if (result.ok) {
           const data = await result.json();
-          setArticles(data); // Uppdaterat för att ladda in alla artiklar utan att använda slice()
-        } else {
+          setArticles(data);
           throw new Error('Failed to fetch data');
         }
       } catch (error) {

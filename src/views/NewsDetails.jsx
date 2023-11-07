@@ -5,9 +5,11 @@ import Footer from '../components/Footer'
 import LetsConnectUs from '../components/componentsNews/LetsConnectUs'
 import Newsletter from '../components/componentsNews/Newsletter'
 import NewsArticles from '../components/componentsNewsDetails/NewsArticles'
+import { ArticlesProvider } from '../components/componentsNews/ArticlesContext';
 
 const NewsDetails = () => {
     return (
+      <ArticlesProvider>
       <div className="wrapper-grid">
         <ScrollToTop/>
         <Header/>
@@ -16,6 +18,7 @@ const NewsDetails = () => {
         <Newsletter/>
         <Footer/>
     </div>
+    </ArticlesProvider>
     )
   }
 
