@@ -1,0 +1,89 @@
+// services page
+// page is under construction section
+    
+
+.wrapper-loader{
+    animation: changeColors 5s infinite ease-in-out;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh);
+
+    @media (min-width: 768px){
+        height: calc(100vh);
+    }
+
+    @media (min-width: 992px){
+        height: calc(100vh);
+    }
+
+    @media (min-width: 1200px){
+        height: calc(100vh);
+    }
+
+    .loader{
+        position: absolute;
+        animation: changePosition 20s infinite ease-in-out;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        font-size: 50px;
+        padding: 10px;
+    }
+}
+
+@keyframes changeColors {
+    0%{
+        background-color: #F0EFE9;
+        color: #84837e;
+    }
+
+     25%{
+        background-color:#cdc9c0;
+        color: #84837e;
+    }
+
+    50%{
+        background-color: #F0EFE9;
+        color: #84837e;
+    }
+
+    75%{
+        background-color: #cdc9c0;
+        color: #84837e;
+    }
+
+    100%{
+        background-color: #F0EFE9;
+        color: #84837e;
+    } 
+}
+
+@keyframes changePosition {
+    0%{
+        top: 0;
+        left: 0;
+    }
+
+     25%{
+        top: 0;
+        left: calc(100% - 90px);
+    }
+
+    50%{
+        top: calc(100% - 95px);
+        left: calc(100% - 90px);
+    }
+
+    75%{
+        top: calc(100% - 95px);
+        left: 0;
+    }
+
+    100%{
+        top: 0;
+        left: 0;
+    } 
+}

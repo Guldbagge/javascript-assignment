@@ -1,0 +1,197 @@
+// contact page
+// lets-connect section
+
+.lets-connect{
+    background-color:#F0EFE9;
+    position: relative;
+    
+    .line{
+        display: none;
+        // position: absolute;
+        position: absolute;
+        bottom: 0px;
+        
+        @media (min-width: 1400px){
+            display: block;
+        }
+    }
+
+    .container{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+
+        .content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .links-connect{
+                margin-top: 50px;
+                a{
+                    // nead to change to block, a is inline
+                    display: inline-block;
+                    color: #191919;
+                    text-decoration: none;
+                    margin-right: 35px;
+                    position: relative;
+
+                    &.active {
+                        font-weight: 500;
+                    }
+
+                    // After active will the following to occur
+                    &.active::after,
+                    &:hover::after {
+                        content: '';
+                        font-weight: 500;
+                        position: absolute;
+                        height: 2px;
+                        width: 15px;
+                        background-color: #191919;
+                        left: 50%;
+                        bottom: -3px;
+                        transform: translate((calc(50% - 15px)));
+                    }
+                }
+            }
+            
+            .h2-links{
+                h2{
+                    font-size: 36px;        
+                    color: #191919;
+                    font-family: 'Dm Sans', sans-serif;
+                    font-weight: 700;    
+                    margin-bottom: 80px; 
+
+                    @media (min-width: 992px) {
+                        font-size: 56px;
+                    }  
+                }
+            }
+        }
+    }
+}
+
+.contact{
+
+    .container{
+        display: block;
+        width: fit-content;
+
+        @media (min-width: 1400px){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: auto;
+        }
+
+        .border{ 
+            margin-top: 120px;
+            margin-bottom: 80px;
+            a{
+                text-decoration: none;
+                display: flex;
+                padding: 50px;
+                
+                .btn-round{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #191919;
+                    color: #F0EFE9;
+                    height: 65px;
+                    width: 65px;
+                }
+
+                .contact-information{
+
+                    @media (min-width: 992px){
+                        margin-left: 20px;
+                        margin-bottom: -20px;
+                        margin-right: 70px;
+                    }
+
+                    h3{
+                        font-size: 22px;        
+                        color: #191919;
+                        font-family: 'Dm Sans', sans-serif;
+                        font-weight: 700;  
+                        margin-bottom: 15px;  
+                    }
+
+                    p{
+                        color: #191919;
+                        font-size: 18;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// leave message section
+
+.leave-message{
+
+    .container{
+        background-color:#F0EFE9;
+        text-align: center;
+
+        .form-wrapper{
+            height: 900px;
+
+            padding: 15px;
+
+            @media (min-width: 992px){
+                padding: 150px;
+            }
+
+            h3{
+                font-family: 'Dm Sans', sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                margin-bottom: 30px;
+
+                @media (min-width: 992px){
+                    font-size: 45px;
+                }
+            }
+
+            form{
+                .form-input {display: block; width: 100%; padding: 8px; padding-left: 30px; border: 0px; border-radius: 30px;}
+                textarea {resize: none; height: 160px;}
+            }
+
+            .errorMessage{color: rgb(160, 55, 55);
+                padding: 20px;
+                font-size: 2rem;
+            }
+
+            .stausMessage{color: rgb(32, 101, 32); 
+                padding: 20px;       
+                font-size: 2rem;
+            }
+        }  
+    }
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    
+    img{
+    width: 100vw;
+
+        @media (min-width: 992px){
+            margin-top: 120px;
+        }
+    }
+}

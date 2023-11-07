@@ -3,17 +3,21 @@ import { Link } from 'react-router-dom';
 
 const OurNewsArticlesBox = ({ url, title, content, published, imageUrl, category }) => {
   function formatDate(dateString) {
-    return new Date(dateString).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+    const date = new Date(dateString);
+    const day = date.toLocaleDateString('en-GB', { day: 'numeric' });
+    const month = date.toLocaleDateString('en-GB', { month: 'short' });
+    return { day, month };
   }
 
-  const formattedDate = formatDate(published);
+  const { day, month } = formatDate(published);
 
   return (
     <Link className="image-and-text" to={url}>
       <div className="image-article">
         <img src={imageUrl} alt="Article" />
         <div className="date">
-          <h3>{formattedDate}</h3>
+          <h3>{day}</h3>
+          <p>{month}</p>
         </div>
       </div>
       <p className="grey category">{category}</p>
@@ -24,3 +28,4 @@ const OurNewsArticlesBox = ({ url, title, content, published, imageUrl, category
 };
 
 export default OurNewsArticlesBox;
+

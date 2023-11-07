@@ -1,0 +1,124 @@
+// footer section
+
+footer{
+    h3{color: #FFFFFF;}
+    background-color: #0E1021;
+    color: #b1b1b1;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    position: relative;
+    .background-lines-right{
+        display: none;
+        position: absolute;
+        bottom: 86px;
+        right: 0px;
+
+        @media (min-width: 1200px) {
+            display: block;
+        }
+    }
+
+    .container{ 
+        .footer-links{
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+
+            .logo{
+                display: none;
+                img{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+
+                p{
+                    display: none;
+                }
+                @media (min-width: 768px) {
+                    display: block;
+                }
+            }
+
+            @media (min-width: 992px) {
+               
+                .logo{
+                    img{
+                        margin-top: 20px;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+
+            @media (min-width: 1200px) { 
+                .logo{
+                    p{
+                        display: block;
+                    width: 350px;
+                    line-height: 2; 
+                    } 
+                }
+            }
+
+            .footer-linkss{
+                h3{
+                    font-family: 'Dm Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 16px;
+                    margin-top: 40px;
+
+                    @media (min-width: 768px) {
+                    font-size: 22px;
+                    margin-top: 40px;
+                    }
+                }
+                
+                .links{
+                    display: none;
+                    @media (min-width: 1200px) {
+                        display: flex;
+                        flex-direction: column;
+                        a{
+                            text-decoration: none;
+                            color: #b1b1b1;
+                            line-height: 2.5; 
+                        }
+                    } 
+                }
+            }
+        }
+
+        .footer-social-media{
+            @media (min-width: 992px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;   
+            }
+
+            .socialmedia-bar{
+                display: none;
+      
+                @media (min-width: 992px) {
+                    display: flex;
+                    
+                    a{
+                        color: #ffffff;
+                        font-size: 1.3rem;
+                        margin-left: 20px;
+                        margin-bottom: 20px;
+        
+                        &:hover{
+                            color: #7a7a7a;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .border-bottom{
+        margin-top: 50px;
+        margin-bottom: 20px; 
+    }
+}

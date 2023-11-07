@@ -1,0 +1,261 @@
+
+// Page news-details
+.news-digitalization{
+
+    .digitalization{
+        background-color: #F0EFE9;
+        padding-bottom: 50px;
+
+        .date{
+            margin-top: 50px;
+        }
+
+        .btn-transparent{
+            background-color: white;
+        }
+
+        width: 100%; 
+    }
+
+    // how-to-use-digitalization section
+
+    .digitalization-container{
+
+        @media (min-width: 1200px){
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+    }
+
+    section{
+        width: 100%;
+        margin-right: 50px;
+         
+         @media (min-width: 1200px){
+            width: 66%;
+        }
+
+        h2{
+            font-size: 45px;
+            font-family: 'Dm Sans', sans-serif;
+            font-weight: 700;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .h4-digitalization{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+
+            h4{
+ 
+                font-size: 20px;
+                font-family: 'Dm Sans', sans-serif;
+                font-weight: 400;
+                margin-right: 20px;
+            }
+
+            .dot{
+                background-color: #F0D082;
+                height: 10px;
+                width: 10px;
+                border-radius: 99px;
+                margin-right: 20px;
+                margin-bottom: 10px;
+            }
+        }
+
+        img{
+        margin-top: 50px;
+        width: 100%;
+        }
+
+        p{
+            color: #6a6a6a;
+            margin-top: 40px;
+            line-height: 2;
+        }
+
+        .p{
+            display: flex;
+            color: #6a6a6a;
+            font-size: 22px;
+            font-family: 'Dm Sans', sans-serif;
+            margin-right: 80px;
+            margin-top: 60px;
+
+            i{
+                margin-right: 40px;
+                margin-top: 50px;;
+                
+            }
+        }
+
+        .button-digitalization{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-areas: 
+            "Digitalization School"
+            "IT  Design"
+            "Work Tech";
+            margin-bottom: 30px;
+
+            .btn-gray{
+
+                margin-bottom: 20px;
+                margin-left:  5px;
+                margin-right: 5px;
+                margin-top: 30px;
+            }
+                
+            @media (min-width: 768px){
+                grid-template-areas: 
+                "Digitalization School IT"  
+                "Design Work Tech";
+            }
+
+            @media (min-width: 1400px){
+                grid-template-areas: 
+                "Digitalization School IT  Design Work Tech";
+            }
+        }
+    }  
+
+    Aside {
+        width: 100%;
+        margin-top: 40px;
+
+        @media (min-width: 1200px){
+            width: 27%;
+            margin-top: 242px;
+        }
+
+        .searchbox-no-position{
+            background-color: #f3f3f3;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 25px;
+            padding: 8px 20px;
+        
+            input{
+                background-color: transparent;
+                width: 100%;
+                border: none;
+                outline: none;
+                font-size: 0.7rem;
+                margin-left: 5px;
+            }
+        }
+        
+        .searchbox-with-position{
+            background-color: #f3f3f3;
+            border-radius: 25px;
+            padding: 8px 20px;
+            position: relative;
+        
+            i{
+                position: absolute;
+                top: 13px;
+            }
+        
+            input{
+                background-color: transparent;
+                width: 100%;
+                border: none;
+                outline: none;
+                font-size: 0.7rem;
+                padding-left: 20px;
+            }
+        }
+
+        .Recent-Posts{
+            border: #c6c6c6 solid 1px;
+            padding: 20px;
+            margin-top: 40px;
+
+            h3{
+                font-size: 22px;
+                font-family: 'Dm Sans', sans-serif;
+                font-weight: 700;
+                margin-top: 30px;
+
+            }
+            
+            .border-bottom-strong{
+                border: #515151 solid 1px;
+                width: 15%;
+                margin-top: -7px;
+
+            }
+
+            a{
+                color: #191919;
+                text-decoration: none;
+
+                h4{
+                    font-family: 'Dm Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 16px;
+                    margin-top: 30px;
+               
+                }
+
+                p{
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #6a6a6a;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .Categories{
+            border: #c6c6c6 solid 1px;
+            padding: 20px;
+            margin-top: 40px;
+
+            h3{
+                font-size: 22px;
+                font-family: 'Dm Sans', sans-serif;
+                font-weight: 700;
+                margin-top: 30px;
+            }
+            
+            .border-bottom-strong{
+                border: #515151 solid 1px;
+                width: 15%;
+                margin-top: -7px;
+                margin-bottom: 20px;
+            }
+
+            a{
+                color: #191919;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+
+                .bold-p{
+                    font-family: 'Dm Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 16px;
+                    margin-top: 7px;
+                    margin-right: 10px;
+               
+                }
+
+                .gray-p{
+                    font-family: 'Dm Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #6a6a6a;
+                    margin-top: 7px;
+                }
+            }
+        }
+    }
+}
