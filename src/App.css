@@ -1378,7 +1378,6 @@
 }
 .our-news-articles .container .wrapper-articles {
   display: grid;
-  align-items: center;
   justify-content: center;
   grid-template-columns: 1fr;
   gap: 30px;

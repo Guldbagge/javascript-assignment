@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import OurNewsArticlesBox from '../../components/componentsNews/OurNewsArticlesBox'
+import NewsBox from '../componentsNewsDetails/NewsBox';
 
-function OurNewsArticles() {
+function NewsArticles() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
@@ -10,7 +10,9 @@ function OurNewsArticles() {
         const result = await fetch('https://win23-assignment.azurewebsites.net/api/articles');
         if (result.ok) {
           const data = await result.json();
-          setArticles(data);
+          
+          const firstThreeArticles = data.slice(0, 3);
+          setArticles(firstThreeArticles);
         } else {
           throw new Error('Failed to fetch data');
         }
@@ -29,7 +31,7 @@ function OurNewsArticles() {
 
         <div className="wrapper-articles">
           {articles.map((article) => (
-            <OurNewsArticlesBox
+            <NewsBox
               key={article.id}
               title={article.title}
               content={article.content}
@@ -46,4 +48,4 @@ function OurNewsArticles() {
   );
 }
 
-export default OurNewsArticles;
+export default NewsArticles;

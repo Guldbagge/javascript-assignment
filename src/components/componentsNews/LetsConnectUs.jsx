@@ -1,5 +1,6 @@
 import React from 'react'
 import BackgroundLines from '../../assets/image/background-lines.svg'
+import { NavLink } from 'react-router-dom';
 
 const LetsConnect = () => {
   return (
@@ -8,8 +9,8 @@ const LetsConnect = () => {
     <div className="container">
         <div className="content">
             <div className="links-connect">
-                <a href="index.html">Home</a>
-                <a href="news.html">News</a>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/news">News</NavLink>
             </div>
             
             <div className="h2-links">

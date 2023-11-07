@@ -1,6 +1,7 @@
 import React from 'react';
 import BackgroundLines from '../../assets/image/background-lines.svg';
 import BorderBox from './BorderBox';
+import { NavLink } from 'react-router-dom';
 
 const Contact = () => {
   const contactUs = [
@@ -16,8 +17,8 @@ const Contact = () => {
         <div className="container">
           <div className="content">
             <div className="links-connect">
-              <a href="index.html">Home</a>
-              <a href="contact.html">Contact</a>
+              <NavLink to="/">Home</NavLink>
+              <NavLink to="/contact">Contact</NavLink>
             </div>
 
             <div className="h2-links">
