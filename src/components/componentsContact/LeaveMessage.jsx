@@ -3,7 +3,8 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup'
 
 const LeaveMessage = () => {
-
+  const [errorMessage, setErrorMessage] = useState('');
+  const [statusMessage, setStatusMessage] = useState('');
   const emailRegEx = new RegExp (/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)
   
   const form = useFormik({
@@ -43,18 +44,12 @@ const LeaveMessage = () => {
     
       switch (result.status) {
         case 200:
-          document.getElementById("status-message").innerHTML = `
-          <div class="alert alert-success" role="alert">
-          Your registration was successful!
-          </div>`
+          setStatusMessage('Your message has been received!'
+          )
           break;
     
         case 400:
-          alert('Something went wrong')
-          document.getElementById("status-message").innerHTML = `
-          <div class="alert alert-warning" role="alert">
-          ${result}
-          </div>`
+          setErrorMessage('Something went wrong')
           break;
       }
     }
@@ -87,7 +82,8 @@ const LeaveMessage = () => {
               <button className="btn-yellow" type="submit" tabIndex="4">Send Message<i className="fa-solid fa-arrow-up-right"></i></button>
             </div>
           </form>
-          <div id="status-message"></div>
+          <p className="errorMessage">{errorMessage}</p>
+          <p className="stausMessage">{statusMessage} </p>
         </div>
       </div>
     </section>

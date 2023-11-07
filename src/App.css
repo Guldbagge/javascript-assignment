@@ -1494,6 +1494,7 @@ footer .border-bottom {
   text-align: center;
 }
 .leave-message .container .form-wrapper {
+  height: 900px;
   padding: 15px;
 }
 @media (min-width: 992px) {
@@ -1523,6 +1524,13 @@ footer .border-bottom {
 .leave-message .container .form-wrapper form textarea {
   resize: none;
   height: 160px;
+}
+.leave-message .container .form-wrapper .errorMessage {
+  color: rgb(160, 55, 55);
+}
+.leave-message .container .form-wrapper .stausMessage {
+  color: rgb(14, 49, 14);
+  padding: 40px;
 }
 
 .map {

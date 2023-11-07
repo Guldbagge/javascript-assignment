@@ -1692,6 +1692,7 @@ footer{
         text-align: center;
 
         .form-wrapper{
+            height: 900px;
 
             padding: 15px;
 
@@ -1713,6 +1714,13 @@ footer{
             form{
                 .form-input {display: block; width: 100%; padding: 8px; padding-left: 30px; border: 0px; border-radius: 30px;}
                 textarea {resize: none; height: 160px;}
+            }
+
+            .errorMessage{color: rgb(160, 55, 55);
+            }
+
+            .stausMessage{color: rgb(14, 49, 14); 
+                padding: 40px;       
             }
         }  
     }
