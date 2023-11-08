@@ -9,28 +9,31 @@ import AboutCompany from '../components/AboutCompany.jsx'
 import WhyChooseUs from '../components/WhyChooseUs.jsx'
 import ProjectAndCase from '../components/ProjectAndCase.jsx'
 import MeetOurTeam from '../components/MeetOurTeam.jsx'
-import ArticleAndNews from '../components/ArticleAndNews.jsx'
+import NewsArticles from '../components/componentsNewsDetails/NewsArticles.jsx'
 import Newsletter from '../components/Newsletter.jsx'
 import Footer from '../components/Footer'
+import { ArticlesProvider } from '../components/componentsNews/ArticlesContext';
 
 const Home = () => {
   return (
     <>
-     <div className="wrapper-grid">
-      <ScrollToTop/>
-      <Header/>
-      <Showcase/>
-      <Brand/>
-      <Accounting/>
-      <AboutCompany/>
-      <ServicesSection/>
-      <WhyChooseUs/>
-      <ProjectAndCase/>
-      <MeetOurTeam/>
-      <ArticleAndNews/>
-      <Newsletter/>
-      <Footer/>
-    </div>
+    <ArticlesProvider>
+      <div className="wrapper-grid">
+        <ScrollToTop/>
+        <Header/>
+        <Showcase/>
+        <Brand/>
+        <Accounting/>
+        <AboutCompany/>
+        <ServicesSection/>
+        <WhyChooseUs/>
+        <ProjectAndCase/>
+        <MeetOurTeam/>
+        <NewsArticles/>
+        <Newsletter/>
+        <Footer/>
+      </div>
+    </ArticlesProvider>
     </>
   )
 }

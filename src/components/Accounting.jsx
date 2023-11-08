@@ -20,10 +20,8 @@ const Accounting = () => {
         </div>
 
         <div className="business-box">
-
             {   services.map ((service, index) => (
-                <BusinessBox key={index} icon={service.icon} title={service.title} description={service.description} url={service.url}/>
-                        
+                <BusinessBox key={index} icon={service.icon} title={service.title} description={service.description} url={service.url}/>                        
             ))}
         </div>
     </div>

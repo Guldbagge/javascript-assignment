@@ -15,26 +15,24 @@ const ProjectAndCase = () => {
     ]
   return (
     <section className="project-and-case">
-    <div className="container">
-        <div className="section-title">
-            <p>Project & Case Studies</p>
-            <h2>Let's Looks Our Global Projects</h2>
+        <div className="container">
+            <div className="section-title">
+                <p>Project & Case Studies</p>
+                <h2>Let's Looks Our Global Projects</h2>
+            </div>
+
+            <div className="project-and-cases">
+                {services.map ((service, index) => (
+                    <GlobalBox key={index} img={service.img} title={service.title} url={service.url}/>
+                
+                ))}
+            </div>
+
+            <div className="center-content">
+                <Button type="dark" titel="All Recent Projects" url="/projects"/>
+            </div>
         </div>
-
-        <div className="project-and-cases">
-
-        {   services.map ((service, index) => (
-                <GlobalBox key={index} img={service.img} title={service.title} url={service.url}/>
-          
-            ))}
-
-        </div>
-
-        <div className="center-content">
-            <Button type="dark" titel="All Recent Projects" url="/projects"/>
-        </div>
-    </div>
-</section> 
+    </section> 
   )
 }
 

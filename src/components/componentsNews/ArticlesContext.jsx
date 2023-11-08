@@ -12,6 +12,7 @@ const ArticlesProvider = ({ children }) => {
         if (result.ok) {
           const data = await result.json();
           setArticles(data);
+        } else {
           throw new Error('Failed to fetch data');
         }
       } catch (error) {

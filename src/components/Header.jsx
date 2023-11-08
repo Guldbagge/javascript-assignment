@@ -45,12 +45,14 @@ const Header = () => {
                 </div>
             </Link >
         </div>
+        
         <div className="socialmedia-bar">
             <Link to="https://facebook.com/" target="_blank"><i className="fa-brands fa-facebook"></i></Link >
-                    <Link to="https://twitter.com/" target="_blank"><i className="fa-brands fa-x-twitter"></i></Link >
-                    <Link to="https://www.instagram.com" target="_blank"><i className="fa-brands fa-instagram"></i></Link >
-                    <Link to="https://www.linkedin.com" target="_blank"><i className="fa-brands fa-linkedin"></i></Link >
+            <Link to="https://twitter.com/" target="_blank"><i className="fa-brands fa-x-twitter"></i></Link >
+            <Link to="https://www.instagram.com" target="_blank"><i className="fa-brands fa-instagram"></i></Link >
+            <Link to="https://www.linkedin.com" target="_blank"><i className="fa-brands fa-linkedin"></i></Link >
         </div>
+
         <div className="menu">
             <nav>
                 <NavLink to="/">Home</NavLink>

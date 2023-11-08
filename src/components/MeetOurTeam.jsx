@@ -4,7 +4,6 @@ import KristinePalmer from '../assets/image/Kristine Palmer.png'
 import MarkAubri from '../assets/image/Mark Aubri.png'
 import KimberlyHansen from '../assets/image/Kimberly Hansen.png'
 import JustinWilloman from '../assets/image/Justin Willoman.png'
-import Button from './Generics/Button'
 import TestimonialBox from '../components/Generics/TestimonialBox'
 import CassandraWarren from '../assets/image/Cassandra Warren.png'
 import AmandaTulling from '../assets/image/Amanda Tulling.png'
@@ -34,16 +33,15 @@ const MeetOurTeam = () => {
                     <p className="testimonial-red-text">Meet Our Team</p>
                     <h2>Experience Team Members</h2>
                 </div>
+
                 <div className="test2">
-                {/* <Button type="btn-transparent" titel="Brows Team" url="/service"/> */}
-                <button className="btn-transparent">Browse Team<i className="fa-solid fa-arrow-up-right"></i></button>
+                    <button className="btn-transparent">Browse Team<i className="fa-solid fa-arrow-up-right"></i></button>
                 </div>
             </div>
 
             <div className="image-of-team">
                 {   services.map ((service, index) => (
                     <MeetOurTeamBox key={index} img={service.img} title={service.title} description={service.description}/>
-            
                 ))}
 
             </div>
@@ -64,16 +62,13 @@ const MeetOurTeam = () => {
                     <div className="testimonial-information-box">
                     {   teams.map ((team, index) => (
                     <TestimonialBox key={index} icon={team.icon} description={team.description} img={team.img} title={team.title} descriptionRed={team.descriptionRed}/>
-            
-                ))}
-               
+                    ))}
                     </div>
                 </div>
             </div>
             
             <div>
-            <button className="btn-black">All Reviews<i className="fa-solid fa-arrow-up-right"></i></button>
-                {/* <Button className="btn-transparent" type="dark" titel="All Reviews" url="/service"/> */}
+                <button className="btn-black">All Reviews<i className="fa-solid fa-arrow-up-right"></i></button>                    
             </div> 
         </section>
     </section>

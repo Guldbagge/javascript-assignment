@@ -20,6 +20,7 @@ const NewsBox = ({ url, title, content, published, imageUrl, category }) => {
           <p>{month}</p>
         </div>
       </div>
+      
       <p className="grey category">{category}</p>
       <h3>{title}</h3>
       <p className="grey">{content}</p>

@@ -21,6 +21,7 @@ const ArticleAndNews = () => {
                 <p className="article-red-text">Article & News</p>
                 <h2>Get Every Single Articles & News</h2>
             </div>
+
             <div className="button">
                 <Button type="btn-transparent" titel="Browse Articles" url="/news"/>
             </div>
@@ -29,7 +30,6 @@ const ArticleAndNews = () => {
         <div className="wrapper-image-and-text">
         {   articles.map ((article, index) => (
                 <ArticleAndNewsBox key={index} url={article.url} img={article.img} date={article.date} month={article.month} description={article.description} titleNext={article.titleNext} title={article.title}  descriptionOne={article.descriptionOne} descriptionTwo={article.descriptionTwo} />
-          
             ))}
 
         </div>
