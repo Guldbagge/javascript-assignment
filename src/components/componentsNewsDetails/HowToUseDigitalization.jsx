@@ -1,8 +1,26 @@
-import React from 'react'
-import newsWoman from '../../assets/image/news-woman.png'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import newsWoman from '../../assets/image/news-woman.png';
+import { Link } from 'react-router-dom';
+import RecentPostsBox from './RecentPostsBox';
+import CategoriesBox from '../componentsNewsDetails/CategoriesBox';
 
-const HowToUseDigitalization = () => {
+const HowToUseDigitalization = () => { 
+    const recentPosts = [
+        {url: "#", title: "How To Blow Through Capital At An Incredible Rate", description: "Jan 14, 2020", border: ""},
+        {url: "#", title: "Design Studios That Everyone Should Know About?", description: "Jan 14, 2020", border: ""},
+        {url: "#", title: "How did we get 1M+ visitors in 30 days without anything!", description: "Jan 14, 2020", border: ""},
+        {url: "#", title: "Figma On Figma: How We Built Our Website Design System", description: "Jan 14, 2020", border: ""}
+    ];
+
+    const categories = [
+        {url: "#", descriptionOne: "Technology", descriptioTwo:"-", descriptionTree:"20 Posts"},
+        {url: "#", descriptionOne: "Freelancing", descriptioTwo:"-", descriptionTree:"07 Posts"},
+        {url: "#", descriptionOne: "Writing", descriptioTwo:"-", descriptionTree:"16 Posts"},
+        {url: "#", descriptionOne: "Marketing", descriptioTwo:"-", descriptionTree:"11 Posts"},
+        {url: "#", descriptionOne: "Business", descriptioTwo:"-", descriptionTree:"35 Posts"},
+        {url: "#", descriptionOne: "Education", descriptioTwo:"-", descriptionTree:"14 Posts"},
+    ];
+    
   return (
     
     // <!-- how-to-use-digitalization section -->
@@ -66,38 +84,23 @@ const HowToUseDigitalization = () => {
                 <div className="Recent-Posts">
                     <h3>Recent Posts</h3>
                     <div className="border-bottom-strong"></div>
-                        <Link href="#">
-                            <h4>How To Blow Through Capital At An Incredible Rate</h4>
-                            <p>Jan 14, 2020</p>
-                        </Link>
+                    
+                    
+                    {recentPosts.map((service, index) => (
+                    <RecentPostsBox key={index} url={service.url} title={service.title} description={service.description} border={service.border}  />
+                    ))}
 
-                        <div className="border-bottom"></div>
-
-                        <Link to href="#">
-                            <h4>Design Studios That Everyone Should Know About? </h4>
-                            <p>Jan 14, 2020</p>
-                        </Link>
-
-                        <div className="border-bottom"></div>
-
-                        <Link to="#">
-                            <h4>How did we get 1M+ visitors in 30 days without anything!</h4>
-                            <p>Jan 14, 2020</p>
-                        </Link>
-
-                        <div className="border-bottom"></div>
-
-                        <Link to="#">
-                            <h4>Figma On Figma: How We Built Our Website Design System</h4>
-                            <p>Jan 14, 2020</p>
-                        </Link>
                 </div>
 
                 <div className="Categories">
                     <h3>Categories</h3>
                     <div className="border-bottom-strong"></div>
+
+                    {categories.map((categorie, index) => (
+                    <CategoriesBox key={index} url={categorie.url}  descriptionOne={categorie.descriptionOne} descriptioTwo={categorie.descriptioTwo} descriptionTree={categorie.descriptionTree} />
+                    ))}
                     
-                    <Link to="#">
+                    {/* <Link to="#">
                         <p className="bold-p">Technology</p>
                         <p className="bold-p">-</p>
                         <p className="gray-p">20 Posts</p>
@@ -131,7 +134,7 @@ const HowToUseDigitalization = () => {
                         <p className="bold-p">Education </p>
                         <p className="bold-p">-</p>
                         <p className="gray-p">14 Posts</p>
-                    </Link>
+                    </Link> */}
                 </div>
             </aside>
         </div>

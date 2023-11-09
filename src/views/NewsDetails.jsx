@@ -14,8 +14,8 @@ const NewsDetails = () => {
       <div className="wrapper-grid">
         <ScrollToTop/>
         <Header/>
-        <HowToUseDigitalization/>
         <LetsConnectUsDetails/>
+        <HowToUseDigitalization/>
         <NewsArticles/>
         <Newsletter/>
         <Footer/>
