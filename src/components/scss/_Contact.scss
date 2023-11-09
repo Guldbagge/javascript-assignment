@@ -102,8 +102,15 @@
                     align-items: center;
                     background-color: #191919;
                     color: #F0EFE9;
-                    height: 65px;
-                    width: 65px;
+                    height: 45px;
+                    width: 45px;
+                    margin-right: 30px;
+                   
+                    @media (min-width: 992px){
+                        height: 65px;
+                        width: 65px;
+                        margin-right: 0;
+                    }
                 }
 
                 .contact-information{

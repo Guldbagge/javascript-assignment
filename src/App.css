@@ -985,8 +985,16 @@
   align-items: center;
   background-color: #191919;
   color: #F0EFE9;
-  height: 65px;
-  width: 65px;
+  height: 45px;
+  width: 45px;
+  margin-right: 30px;
+}
+@media (min-width: 992px) {
+  .contact .container .border a .btn-round {
+    height: 65px;
+    width: 65px;
+    margin-right: 0;
+  }
 }
 @media (min-width: 992px) {
   .contact .container .border a .contact-information {
@@ -1109,10 +1117,18 @@
   justify-content: start;
 }
 .news-digitalization section .h4-digitalization h4 {
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Dm Sans", sans-serif;
   font-weight: 400;
   margin-right: 20px;
+}
+@media (min-width: 768px) {
+  .news-digitalization section .h4-digitalization h4 {
+    font-size: 20px;
+    font-family: "Dm Sans", sans-serif;
+    font-weight: 400;
+    margin-right: 20px;
+  }
 }
 .news-digitalization section .h4-digitalization .dot {
   background-color: #F0D082;
@@ -1166,17 +1182,17 @@
     grid-template-areas: "Digitalization School IT  Design Work Tech";
   }
 }
-.news-digitalization Aside {
+.news-digitalization aside {
   width: 100%;
   margin-top: 40px;
 }
 @media (min-width: 1200px) {
-  .news-digitalization Aside {
+  .news-digitalization aside {
     width: 27%;
     margin-top: 242px;
   }
 }
-.news-digitalization Aside .searchbox-no-position {
+.news-digitalization aside .searchbox-no-position {
   background-color: #f3f3f3;
   display: flex;
   align-items: center;
@@ -1184,7 +1200,7 @@
   border-radius: 25px;
   padding: 8px 20px;
 }
-.news-digitalization Aside .searchbox-no-position input {
+.news-digitalization aside .searchbox-no-position input {
   background-color: transparent;
   width: 100%;
   border: none;
@@ -1192,17 +1208,17 @@
   font-size: 0.7rem;
   margin-left: 5px;
 }
-.news-digitalization Aside .searchbox-with-position {
+.news-digitalization aside .searchbox-with-position {
   background-color: #f3f3f3;
   border-radius: 25px;
   padding: 8px 20px;
   position: relative;
 }
-.news-digitalization Aside .searchbox-with-position i {
+.news-digitalization aside .searchbox-with-position i {
   position: absolute;
   top: 13px;
 }
-.news-digitalization Aside .searchbox-with-position input {
+.news-digitalization aside .searchbox-with-position input {
   background-color: transparent;
   width: 100%;
   border: none;
@@ -1210,70 +1226,70 @@
   font-size: 0.7rem;
   padding-left: 20px;
 }
-.news-digitalization Aside .Recent-Posts {
+.news-digitalization aside .Recent-Posts {
   border: #c6c6c6 solid 1px;
   padding: 20px;
   margin-top: 40px;
 }
-.news-digitalization Aside .Recent-Posts h3 {
+.news-digitalization aside .Recent-Posts h3 {
   font-size: 22px;
   font-family: "Dm Sans", sans-serif;
   font-weight: 700;
   margin-top: 30px;
 }
-.news-digitalization Aside .Recent-Posts .border-bottom-strong {
+.news-digitalization aside .Recent-Posts .border-bottom-strong {
   border: #515151 solid 1px;
   width: 15%;
   margin-top: -7px;
 }
-.news-digitalization Aside .Recent-Posts a {
+.news-digitalization aside .Recent-Posts a {
   color: #191919;
   text-decoration: none;
 }
-.news-digitalization Aside .Recent-Posts a h4 {
+.news-digitalization aside .Recent-Posts a h4 {
   font-family: "Dm Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   margin-top: 30px;
 }
-.news-digitalization Aside .Recent-Posts a p {
+.news-digitalization aside .Recent-Posts a p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #6a6a6a;
   margin-top: 10px;
 }
-.news-digitalization Aside .Categories {
+.news-digitalization aside .Categories {
   border: #c6c6c6 solid 1px;
   padding: 20px;
   margin-top: 40px;
 }
-.news-digitalization Aside .Categories h3 {
+.news-digitalization aside .Categories h3 {
   font-size: 22px;
   font-family: "Dm Sans", sans-serif;
   font-weight: 700;
   margin-top: 30px;
 }
-.news-digitalization Aside .Categories .border-bottom-strong {
+.news-digitalization aside .Categories .border-bottom-strong {
   border: #515151 solid 1px;
   width: 15%;
   margin-top: -7px;
   margin-bottom: 20px;
 }
-.news-digitalization Aside .Categories a {
+.news-digitalization aside .Categories a {
   color: #191919;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
-.news-digitalization Aside .Categories a .bold-p {
+.news-digitalization aside .Categories a .bold-p {
   font-family: "Dm Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   margin-top: 7px;
   margin-right: 10px;
 }
-.news-digitalization Aside .Categories a .gray-p {
+.news-digitalization aside .Categories a .gray-p {
   font-family: "Dm Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -1591,10 +1607,43 @@ header .container .btn-menubars {
   font-size: 25px;
   background-color: transparent;
 }
+header .container .btn-menubars .fa-bars-staggered {
+  color: #191919;
+}
+header .container .btn-menubars .fa-x {
+  color: #DAD9D3;
+  position: fixed;
+  z-index: 2;
+}
 @media (min-width: 992px) {
   header .container .btn-menubars {
     display: none;
   }
+}
+header .container .main-menu {
+  background-color: #191919;
+  color: #DAD9D3;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 70px 0;
+  z-index: 2;
+}
+header .container .main-menu a {
+  color: #DAD9D3;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #191919;
+}
+header .container .main-menu a:hover {
+  background-color: #191919;
+}
+header .container .main-menu a .active {
+  background-color: #191919;
 }
 header .container .logotype {
   grid-area: logo;

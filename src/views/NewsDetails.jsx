@@ -6,6 +6,7 @@ import LetsConnectUsDetails from '../components/componentsNewsDetails/LetsConnec
 import Newsletter from '../components/componentsNews/Newsletter'
 import NewsArticles from '../components/componentsNewsDetails/NewsArticles'
 import { ArticlesProvider } from '../components/componentsNews/ArticlesContext';
+import HowToUseDigitalization from '../components/componentsNewsDetails/HowToUseDigitalization'
 
 const NewsDetails = () => {
     return (
@@ -13,6 +14,7 @@ const NewsDetails = () => {
       <div className="wrapper-grid">
         <ScrollToTop/>
         <Header/>
+        <HowToUseDigitalization/>
         <LetsConnectUsDetails/>
         <NewsArticles/>
         <Newsletter/>

@@ -50,10 +50,17 @@
 
             h4{
  
-                font-size: 20px;
+                font-size: 16px;
                 font-family: 'Dm Sans', sans-serif;
                 font-weight: 400;
                 margin-right: 20px;
+
+                @media (min-width: 768px){
+                    font-size: 20px;
+                    font-family: 'Dm Sans', sans-serif;
+                    font-weight: 400;
+                    margin-right: 20px;
+                }
             }
 
             .dot{
@@ -122,7 +129,7 @@
         }
     }  
 
-    Aside {
+    aside {
         width: 100%;
         margin-top: 40px;
 

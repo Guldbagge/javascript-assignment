@@ -1,22 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logoBlack from '../assets/image/Logo-black.svg'
 import { NavLink } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import Menu from './Generics/Menu'
+
 
 const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <header>
     <div className="container">
         
-        {/* <button className="btn btn-group dropstart btn-menubars" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i className="fa-solid fa-bars-staggered"></i></button>
-        <button/>
-        <div className="dropdown-menu">
-            <a className="dropdown-item" href="index.html">Home</a>
-            <a className="dropdown-item" href="service.html">Services</a>
-            <a className="dropdown-item" href="news.html">News</a>
-            <a className="dropdown-item" href="contact.html">Contact</a>
-        </div> */}
+        {menuOpen ?(<Menu />) : (<></>)}
+        <button onClick={() => setMenuOpen(!menuOpen)} className='btn-menubars'>
+            {menuOpen ? (<i class="fa-solid fa-x"></i>) : <i className="fa-solid fa-bars-staggered"></i>}
+        </button>
   
         <div className="logotype">
             <Link to="/home">
