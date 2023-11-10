@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import logoBlack from '../assets/image/Logo-black.svg'
 import { NavLink } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import Menu from './Generics/Menu'
+import Menu from './parts/Menu'
+import Button from './parts/Button'
 
 
 const Header = () => {
@@ -60,7 +61,7 @@ const Header = () => {
                 <NavLink to="/contact">Contact</NavLink>
 
             </nav> 
-            <Link className="btn-yellow btn-login" title="login" href="login.html">Login <i className="fa-solid fa-arrow-up-right"></i></Link>
+            <Button type="yellow" titel="Login" url="/login"/>
         </div>
     </div>
 </header>

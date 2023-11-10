@@ -162,7 +162,7 @@
                 gap: 20px;
                 margin-top: -100px;
                 // margin-left: -100px;
-        
+
                 .btn-yellow{
                     padding-left: 150px;
                     padding-right: 150px;
@@ -295,19 +295,29 @@
                     line-height: 2;
                 }
 
+                .btn-black{
+                    color: #FFFFFF;
+                    font-weight: 600;
+                }
                 .btn-round{
-                    margin-left: 30px;
+                    margin-left: 10px;
                     i{
                         display: flex;
                         align-items: center;
                         justify-content: center;
                     }
+                    @media (min-width: 768px){
+                        margin-left: 30px;;
+                    }
                 }
 
-                a{
-                    text-decoration: none;
+                a{  text-decoration: none;
                     color: #191919;
-                    margin-left: 10px;
+                    margin-left: 5px;
+                    @media (min-width: 768px){
+                        margin-left: 10px;
+                    }
+ 
                 }
             }
         }
@@ -473,6 +483,15 @@
                 .services{
                     text-decoration: none;
                     color: #191919;
+
+                    .line{
+                        background-color: #191919;
+                        width: 50px;
+                        border: #191919 solid 1px;
+                        display: block;
+                        margin-bottom: 40px;
+                        margin-top: 30px;
+                    }
 
                     h3{
                         font-family: 'Dm Sans', sans-serif;

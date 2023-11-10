@@ -1,6 +1,6 @@
 import React from 'react';
 import ConsultingAgency from '../assets/image/Consulting Agency.png'
-import  ConsultingBox from './Generics/ConsultingBox'
+import  ConsultingBox from './parts/ConsultingBox'
 
 const WhyChooseUs = () => {
     const services = [

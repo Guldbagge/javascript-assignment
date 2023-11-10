@@ -1,8 +1,8 @@
 import React from 'react';
 import newsWoman from '../../assets/image/news-woman.png';
-import { Link } from 'react-router-dom';
 import RecentPostsBox from './RecentPostsBox';
 import CategoriesBox from '../componentsNewsDetails/CategoriesBox';
+import ButtonClean from '../parts/ButtonClean';
 
 const HowToUseDigitalization = () => { 
     const recentPosts = [
@@ -66,12 +66,12 @@ const HowToUseDigitalization = () => {
                 </p> 
 
                 <div className="button-digitalization">
-                    <span><button className="btn-gray Digitalization">Digitalization</button></span>
-                    <span><button className="btn-gray School">School</button></span>
-                    <span><button className="btn-gray IT">IT</button></span>
-                    <span><button className="btn-gray Design">Design</button></span>
-                    <span><button className="btn-gray Work">Work</button></span>
-                    <span><button className="btn-gray Tech">Tech</button></span>
+                    <ButtonClean type="gray" titel="Digitalization" url="/digitalization" />
+                    <ButtonClean type="gray" titel="School" url="/school" />
+                    <ButtonClean type="gray" titel="IT" url="/it" />
+                    <ButtonClean type="gray" titel="Design" url="/design" />
+                    <ButtonClean type="gray" titel="Work" url="/work" />
+                    <ButtonClean type="gray" titel="Tech" url="/tech" />
                 </div>
             </section>
 
@@ -100,41 +100,6 @@ const HowToUseDigitalization = () => {
                     <CategoriesBox key={index} url={categorie.url}  descriptionOne={categorie.descriptionOne} descriptioTwo={categorie.descriptioTwo} descriptionTree={categorie.descriptionTree} />
                     ))}
                     
-                    {/* <Link to="#">
-                        <p className="bold-p">Technology</p>
-                        <p className="bold-p">-</p>
-                        <p className="gray-p">20 Posts</p>
-                    </Link>
-
-                    <Link to="#">
-                        <p className="bold-p">Freelancing</p>
-                        <p className="bold-p">-</p>
-                        <p className="gray-p">07 Posts</p>
-                    </Link>
-
-                    <Link to="#">
-                        <p className="bold-p">Writing</p>
-                        <p className="bold-p">-</p>
-                        <p className="gray-p">16 Posts</p>
-                    </Link>
-
-                    <Link to="#">
-                        <p className="bold-p">Marketing</p>
-                        <p className="bold-p">-</p>
-                        <p className="gray-p">11 Posts</p>
-                    </Link>
-
-                    <Link to="#">
-                        <p className="bold-p">Business </p>
-                        <p className="bold-p">-</p>
-                        <p className="gray-p">35 Posts</p>
-                    </Link>
-                    
-                    <Link to="#">
-                        <p className="bold-p">Education </p>
-                        <p className="bold-p">-</p>
-                        <p className="gray-p">14 Posts</p>
-                    </Link> */}
                 </div>
             </aside>
         </div>

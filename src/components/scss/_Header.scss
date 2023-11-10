@@ -49,26 +49,26 @@ header {
             bottom: 0;
             left: 0;
             right: 0;
-            padding: 70px 0;
+            padding: 90px 0;
             z-index: 2;
-
+          
             a {
-                color: #DAD9D3;
-                text-decoration: none;
-                display: block;
-                padding: 20px;
-                text-align: center;
-                border-bottom: 1px solid#191919;
-
-                &:hover {
-                    background-color: #191919;
-                }
-                .active{
-                    background-color: #191919;
-                }
-            
+              color: #DAD9D3;
+              text-decoration: none;
+              display: block;
+              padding: 20px;
+              text-align: center;
+              border-bottom: 1px solid #191919;
+          
+              &.hover {
+                  background-color: #222222;
+              }
+          
+              &.active {
+                  background-color: #4a4a4a;
+              }
             }
-        }                  
+          }                
         
       
 

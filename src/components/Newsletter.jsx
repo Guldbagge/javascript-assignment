@@ -1,6 +1,7 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import backgroundWavyLines from '../assets/image/background-wavy-lines.svg'
+import Button from './parts/Button';
 
 const Newsletter = () => {
   const form = useFormik({
@@ -32,7 +33,7 @@ const Newsletter = () => {
             onChange={form.handleChange}
             onBlur={form.handleBlur}
           />
-          <button className="btn-yellow" type="submit">Subscribe <i className="fa-solid fa-arrow-up-right"></i></button>
+          <Button type="yellow" titel="Subscribe" url="/subscribe"/>
         </form>
       </div>
     </section>

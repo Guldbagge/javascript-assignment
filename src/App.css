@@ -275,18 +275,32 @@
 .about-company .container .container-about-company .about-companys p {
   line-height: 2;
 }
+.about-company .container .container-about-company .about-companys .btn-black {
+  color: #FFFFFF;
+  font-weight: 600;
+}
 .about-company .container .container-about-company .about-companys .btn-round {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 .about-company .container .container-about-company .about-companys .btn-round i {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 768px) {
+  .about-company .container .container-about-company .about-companys .btn-round {
+    margin-left: 30px;
+  }
+}
 .about-company .container .container-about-company .about-companys a {
   text-decoration: none;
   color: #191919;
-  margin-left: 10px;
+  margin-left: 5px;
+}
+@media (min-width: 768px) {
+  .about-company .container .container-about-company .about-companys a {
+    margin-left: 10px;
+  }
 }
 @media (min-width: 1400px) {
   .about-company .container-about-company {
@@ -428,6 +442,14 @@
 .services-section .container .services-sections .services {
   text-decoration: none;
   color: #191919;
+}
+.services-section .container .services-sections .services .line {
+  background-color: #191919;
+  width: 50px;
+  border: #191919 solid 1px;
+  display: block;
+  margin-bottom: 40px;
+  margin-top: 30px;
 }
 .services-section .container .services-sections .services h3 {
   font-family: "Dm Sans", sans-serif;
@@ -1167,6 +1189,9 @@
   margin-bottom: 30px;
 }
 .news-digitalization section .button-digitalization .btn-gray {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
   margin-left: 5px;
   margin-right: 5px;
@@ -1628,7 +1653,7 @@ header .container .main-menu {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 70px 0;
+  padding: 90px 0;
   z-index: 2;
 }
 header .container .main-menu a {
@@ -1639,11 +1664,11 @@ header .container .main-menu a {
   text-align: center;
   border-bottom: 1px solid #191919;
 }
-header .container .main-menu a:hover {
-  background-color: #191919;
+header .container .main-menu a.hover {
+  background-color: #222222;
 }
-header .container .main-menu a .active {
-  background-color: #191919;
+header .container .main-menu a.active {
+  background-color: #4a4a4a;
 }
 header .container .logotype {
   grid-area: logo;
@@ -1740,21 +1765,6 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 header .container .menu .btn-login {
   padding-top: 12px;
   padding-bottom: 12px;
-}
-
-html, body {
-  color: #191919;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.wrapper-grid {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
 }
 
 .btn-yellow {
@@ -1987,4 +1997,19 @@ label {
 
 .alert {
   margin-top: 50px;
+}
+
+html, body {
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.wrapper-grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
 }

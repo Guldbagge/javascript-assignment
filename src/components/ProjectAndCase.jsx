@@ -3,8 +3,8 @@ import newspaper from '../assets/image/newspaper.png'
 import glasses from '../assets/image/glasses.png'
 import note from '../assets/image/note.png'
 import computer from '../assets/image/computer.png'
-import GlobalBox from '../components/Generics/GlobalBox'
-import Button from './Generics/Button'
+import GlobalBox from './parts/GlobalBox'
+import Button from './parts/Button'
 
 const ProjectAndCase = () => {
     const services = [

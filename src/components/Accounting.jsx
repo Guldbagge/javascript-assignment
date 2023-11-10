@@ -1,6 +1,7 @@
 import React from 'react'
-import Button from '../components/Generics/Button'
-import BusinessBox from '../components/Generics/BusinessBox'
+import Button from './parts/Button'
+import BusinessBox from './parts/BusinessBox'
+import Heading from './parts/Heading'
 
 const Accounting = () => {
     const services = [
@@ -16,6 +17,7 @@ const Accounting = () => {
         <div className="section-title">
             <p>Features</p>
             <h2>Our Accounting is <br/> trusted by thousand <br/>of companies</h2>
+            {/* <Heading title="Features" description="Our Accounting is trusted by thousand of companies"/> */}
             <Button type="yellow" titel="Brows services" url="/consulting"/>
         </div>
 

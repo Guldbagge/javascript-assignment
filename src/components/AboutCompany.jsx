@@ -2,6 +2,7 @@ import React from 'react'
 import woman from '../assets/image/woman.png'
 import EWlement from '../assets/image/EWlement.svg'
 import { Link } from 'react-router-dom'
+import Button from './parts/Button'
 
 const AboutCompany = () => {
   return (
@@ -29,7 +30,7 @@ const AboutCompany = () => {
                         <h2>We Are Business <br/>Consulting & Credit <br/>Repair Experts</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis quas assumenda esse obcaecati? Ex esse error voluptates iure vel totam eos.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.</p>
-                        <button className="btn-black">Learn More<i className="fa-solid fa-arrow-up-right"></i></button>
+                        <Button type="dark" titel="Learn More" url="/learnmore" />
                         <button className="btn-round"><i className="fa-sharp fa-solid fa-play fa-xs"></i></button>
                         <Link to="#">Intro Video</Link>
                     </div>

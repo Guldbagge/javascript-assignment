@@ -5,7 +5,7 @@ const ServiceBox = ({title, description, url}) => {
     return (
       <div className ="service-box">
         <Link className="services" to="#">
-          <i className="fa-regular fa-horizontal-rule"></i><i className="fa-regular fa-horizontal-rule"></i>
+          <span className='line'></span>
           <h3>{title}</h3>
           <p>{description}</p>
         </Link>

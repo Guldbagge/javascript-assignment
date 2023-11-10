@@ -1,5 +1,5 @@
 import React from 'react'
-import ScrollToTop from '../components/Generics/ScrollToTop.jsx'
+import ScrollToTop from '../components/parts/ScrollToTop.jsx'
 import Header from '../components/Header.jsx'
 import ServicesSection from '../components/ServicesSection.jsx'
 import Showcase from '../components/Showcase.jsx'

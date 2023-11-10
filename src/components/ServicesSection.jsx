@@ -1,6 +1,6 @@
 import React from 'react'
-import ServiceBox from './Generics/ServiceBox'
-import Button from './Generics/Button'
+import ServiceBox from './parts/ServiceBox'
+import Button from './parts/Button'
 import backgroundLinesWhiteRight from '../assets/image/background-lines-white-right.svg'
 
 const ServicesSection = () => {
