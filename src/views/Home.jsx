@@ -9,7 +9,7 @@ import AboutCompany from '../components/AboutCompany.jsx'
 import WhyChooseUs from '../components/WhyChooseUs.jsx'
 import ProjectAndCase from '../components/ProjectAndCase.jsx'
 import MeetOurTeam from '../components/MeetOurTeam.jsx'
-import NewsArticles from '../components/componentsNewsDetails/NewsArticles.jsx'
+import NewsArticlesIndex from '../components/NewsArticlesIndex.jsx'
 import Newsletter from '../components/Newsletter.jsx'
 import Footer from '../components/Footer'
 import { ArticlesProvider } from '../components/componentsNews/ArticlesContext';
@@ -29,7 +29,7 @@ const Home = () => {
         <WhyChooseUs/>
         <ProjectAndCase/>
         <MeetOurTeam/>
-        <NewsArticles/>
+        <NewsArticlesIndex/>
         <Newsletter/>
         <Footer/>
       </div>

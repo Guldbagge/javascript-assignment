@@ -836,12 +836,14 @@
     
     .article-red-text{
         color: #F94D1C; 
+        margin-bottom: 10px;
     }
 
     h2{
         font-family: 'DM Sans', sans-serif;
         font-size: 30px;
         font-weight: 700;
+        margin-bottom: 20px;
         
         @media (min-width: 1400px){
             font-size: 45px; 

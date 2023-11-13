@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { ArticlesContext } from'../../components/componentsNews/ArticlesContext';
-import NewsBox from '../componentsNews/NewsBox';
-import Button from '../parts/Button';
+import { ArticlesContext } from'../components/componentsNews/ArticlesContext';
+import NewsBox from '../components/componentsNews/NewsBox';
+import Button from './parts/Button';
 
 function OurNewsArticles() {
   const articles = useContext(ArticlesContext);
@@ -19,7 +19,7 @@ function OurNewsArticles() {
   }
 
   return (
-    <section className="our-news-articles article-and-news-details">
+    <section className="our-news-articles article-and-news">
       <div className="container">
         <div className="heading-and-btn">
           <div className="heading">

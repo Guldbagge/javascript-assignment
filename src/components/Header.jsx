@@ -15,7 +15,7 @@ const Header = () => {
         
         {menuOpen ?(<Menu />) : (<></>)}
         <button onClick={() => setMenuOpen(!menuOpen)} className='btn-menubars'>
-            {menuOpen ? (<i class="fa-solid fa-x"></i>) : <i className="fa-solid fa-bars-staggered"></i>}
+            {menuOpen ? (<i className="fa-solid fa-x"></i>) : <i className="fa-solid fa-bars-staggered"></i>}
         </button>
   
         <div className="logotype">
