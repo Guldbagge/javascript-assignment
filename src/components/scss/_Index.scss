@@ -863,14 +863,14 @@
         line-height: 2;
     }
 
-    .btn-transparent{
+    .button{
         margin-top:10px ;
         margin-right: 10px;
         margin-bottom: 40px;
         
         @media (min-width: 1400px){
             margin-bottom: 0px;
-        }  
+        } 
     }
 
     .heading-and-btn{
@@ -930,7 +930,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: column;     
         
         @media (min-width: 1400px){
            display: block;
@@ -956,6 +956,7 @@
 
     img{
         width: 100%;
+        
 
         @media (min-width: 768px){
             width: fit-content;

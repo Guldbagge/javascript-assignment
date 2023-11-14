@@ -765,13 +765,13 @@
   margin-top: 25px;
   line-height: 2;
 }
-.article-and-news .btn-transparent {
+.article-and-news .button {
   margin-top: 10px;
   margin-right: 10px;
   margin-bottom: 40px;
 }
 @media (min-width: 1400px) {
-  .article-and-news .btn-transparent {
+  .article-and-news .button {
     margin-bottom: 0px;
   }
 }
@@ -1366,16 +1366,6 @@
 }
 @media (min-width: 1400px) {
   .article-and-news-details .button {
-    margin-bottom: 0px;
-  }
-}
-.article-and-news-details .btn-transparent {
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 40px;
-}
-@media (min-width: 1400px) {
-  .article-and-news-details .btn-transparent {
     margin-bottom: 0px;
   }
 }
