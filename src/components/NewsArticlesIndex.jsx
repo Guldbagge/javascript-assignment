@@ -38,9 +38,10 @@ function OurNewsArticles() {
           ))}
         </div>
       </div>
+
       <div className="dots">
-                    <i className="fa-solid fa-period fa-2xl"></i><i className="fa-duotone fa-period fa-2xl"></i><i className="fa-duotone fa-period fa-2xl"></i><i className="fa-duotone fa-period fa-2xl"></i><i className="fa-duotone fa-period fa-2xl"></i>
-                </div>
+        <i className="fa-solid fa-period fa-2xl"></i><i className="fa-duotone fa-period fa-2xl"></i><i className="fa-duotone fa-period fa-2xl"></i><i className="fa-duotone fa-period fa-2xl"></i><i className="fa-duotone fa-period fa-2xl"></i>
+      </div>
     </section>
   );
 }

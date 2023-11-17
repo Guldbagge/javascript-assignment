@@ -21,8 +21,6 @@ const MeetOurTeam = () => {
         { icon:"fa-sharp fa-solid fa-star fa-sm", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate", img: CassandraWarren, title: "Cassandra Warren", descriptionRed: "Business Manager, Dorfus" },
         { icon:"fa-sharp fa-solid fa-star fa-sm", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate", img: AmandaTulling, title: "Amanda Tulling", descriptionRed: "Senior Developer, Square" },
         { icon:"fa-sharp fa-solid fa-star fa-sm", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate", img: JackMcDogglas, title: "Jack McDogglas", descriptionRed: "Key Account Manager, Gobona" },
-
-
     ]
 
   return (
@@ -43,7 +41,6 @@ const MeetOurTeam = () => {
                 {   services.map ((service, index) => (
                     <MeetOurTeamBox key={index} img={service.img} title={service.title} description={service.description}/>
                 ))}
-
             </div>
 
             <div className="dots">

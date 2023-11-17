@@ -448,8 +448,8 @@
   width: 50px;
   border: #191919 solid 1px;
   display: block;
-  margin-bottom: 40px;
-  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .services-section .container .services-sections .services h3 {
   font-family: "Dm Sans", sans-serif;
@@ -2039,8 +2039,9 @@ header .container .menu .btn-login {
   border: 1px solid #191919;
   color: #FFFFFF;
   text-decoration: none;
-  padding: 25px 20px 20px 20px;
-  margin-left: 180px;
+  padding: 20px 20px 20px 20px;
+  margin-left: 90px;
+  margin-bottom: 60px;
   font-weight: 600;
   border-radius: 999px;
 }

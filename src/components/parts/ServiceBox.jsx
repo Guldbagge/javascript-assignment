@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom'
 
 const ServiceBox = ({title, description, url}) => {
     return (
-      <div className ="service-box">
-        <Link className="services" to="#">
+      <div className ="service-box services">
+        {/* <div className="services" to="#"> */}
           <span className='line'></span>
           <h3>{title}</h3>
           <p>{description}</p>
-        </Link>
+          <Link className="btn-service" href="consulting.html"><i className="fa-sharp fa-regular fa-arrow-right"></i></Link>
+        {/* </div> */}
       </div>
     )
   }

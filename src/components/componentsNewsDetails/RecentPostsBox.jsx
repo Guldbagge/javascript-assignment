@@ -9,7 +9,8 @@ const RecentPostsBox = ({ url, title, description, border }) => {
         <p>{description}</p>
       </Link>
 
-      <div className="border-bottom">{border}</div>
+      <div className="border-bottom">{border}
+      </div>
     </>
   );
 };

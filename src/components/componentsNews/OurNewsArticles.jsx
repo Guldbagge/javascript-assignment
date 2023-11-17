@@ -20,7 +20,8 @@ function OurNewsArticles() {
   return (
     <section className="our-news-articles">
       <div className="container">
-        <div className="h2"><h2>Our News & Articles</h2></div>
+        <div className="h2"><h2>Our News & Articles</h2>
+        </div>
 
         <div className="wrapper-articles">
           {loadedArticles.map((article) => (

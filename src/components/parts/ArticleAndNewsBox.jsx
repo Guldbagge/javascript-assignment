@@ -11,6 +11,7 @@ const ArticleAndNewsBox = ({ url, img, date, month, description, title, titleNex
           <p>{month}</p>
         </div>
       </div>
+      
       <p className="grey-large">{description}</p>
       <h3>{title} <br /> {titleNext} </h3>
       <p className="grey">{descriptionOne}<br />{descriptionTwo}</p>

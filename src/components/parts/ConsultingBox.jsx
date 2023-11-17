@@ -10,8 +10,8 @@ const ConsultingBox = ({icon, title, description}) => {
     </div>
 
     <div>
-        <h3>{title}</h3>
-        <p>{description}</p>
+      <h3>{title}</h3>
+      <p>{description}</p>
     </div>
   </div>
   )

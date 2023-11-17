@@ -13,21 +13,21 @@ const Accounting = () => {
 
   return (
     <section className="accounting">
-    <div className="container">
-        <div className="section-title">
-            <p>Features</p>
-            <h2>Our Accounting is <br/> trusted by thousand <br/>of companies</h2>
-            {/* <Heading title="Features" description="Our Accounting is trusted by thousand of companies"/> */}
-            <Button type="yellow" titel="Brows services" url="/consulting"/>
-        </div>
+        <div className="container">
+            <div className="section-title">
+                <p>Features</p>
+                <h2>Our Accounting is <br/> trusted by thousand <br/>of companies</h2>
+                {/* <Heading title="Features" description="Our Accounting is trusted by thousand of companies"/> */}
+                <Button type="yellow" titel="Brows services" url="/consulting"/>
+            </div>
 
-        <div className="business-box">
-            {   services.map ((service, index) => (
-                <BusinessBox key={index} icon={service.icon} title={service.title} description={service.description} url={service.url}/>                        
-            ))}
+            <div className="business-box">
+                {   services.map ((service, index) => (
+                    <BusinessBox key={index} icon={service.icon} title={service.title} description={service.description} url={service.url}/>                        
+                ))}
+            </div>
         </div>
-    </div>
-</section>
+    </section>
   )
 }
 

@@ -23,12 +23,12 @@ function OurNewsArticles() {
       <div className="container">
         <div className="heading-and-btn">
           <div className="heading">
-              <p className="article-red-text">Article & News</p>
-              <h2>Get Every Single Articles & News</h2>
+            <p className="article-red-text">Article & News</p>
+            <h2>Get Every Single Articles & News</h2>
           </div>
           
           <div className="button">
-              <Button type="transparent" titel="Browse Articles" url="/news" />
+            <Button type="transparent" titel="Browse Articles" url="/news" />
           </div>
         </div>
 
@@ -38,9 +38,10 @@ function OurNewsArticles() {
           ))}
         </div>
       </div>
+
       <div className="dots">
-                    <i className="fa-solid fa-period fa-2xl"></i><i className="fa-duotone fa-period fa-2xl"></i><i className="fa-duotone fa-period fa-2xl"></i><i className="fa-duotone fa-period fa-2xl"></i><i className="fa-duotone fa-period fa-2xl"></i>
-                </div>
+        <i className="fa-solid fa-period fa-2xl"></i><i className="fa-duotone fa-period fa-2xl"></i><i className="fa-duotone fa-period fa-2xl"></i><i className="fa-duotone fa-period fa-2xl"></i><i className="fa-duotone fa-period fa-2xl"></i>
+      </div>
     </section>
   );
 }

@@ -31,9 +31,10 @@ const ServicesSection = () => {
                     ))}
                 </section>
             </div>
-                <div className="center-content">
-                    <Button type="btn-transparent" titel="Brows services" url="/service"/>
-                </div>
+
+            <div className="center-content">
+                <Button type="btn-transparent" titel="Brows services" url="/service"/>
+            </div>
         </div>
     </section>
   )
