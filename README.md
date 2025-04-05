@@ -1,8 +1,11 @@
-# React + Vite
+## Overview
+Crito is a frontend website project built using a combination of JavaScript, SCSS, CSS, and HTML. This project demonstrates various web development techniques and practices, providing a comprehensive example of a modern frontend website.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+- **JavaScript:** Utilizes JavaScript for dynamic and interactive web functionalities.
+- **Responsive Design:** Styled with CSS and SCSS to ensure responsiveness across different devices.
+- **HTML Integration:** Structured web content using HTML.
+- **SCSS Preprocessing:** Utilizes SCSS for better styling management.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+1. Clone the repository
